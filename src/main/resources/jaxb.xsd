@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.0">
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://java.sun.com/xml/ns/jaxb">
 
     <!--This tells JAXB what package to create the Java classes in-->
-    <xsd:annotation>
-        <xsd:appinfo>
-            <jaxb:schemaBindings>
-                <jaxb:package name="guru.springframework.domain"/>
-            </jaxb:schemaBindings>
-        </xsd:appinfo>
-    </xsd:annotation>
+    <!--    <xsd:annotation>-->
+    <!--        <xsd:appinfo>-->
+    <!--            <jaxb:schemaBindings>-->
+    <!--                <jaxb:package name="org.example"/>-->
+    <!--            </jaxb:schemaBindings>-->
+    <!--        </xsd:appinfo>-->
+    <!--    </xsd:annotation>-->
 
     <xsd:complexType name="Product">
         <xsd:sequence>
